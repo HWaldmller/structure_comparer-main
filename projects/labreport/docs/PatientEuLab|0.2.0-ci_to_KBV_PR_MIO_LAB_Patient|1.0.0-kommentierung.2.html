@@ -1,0 +1,3717 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mapping: PatientEuLab|0.2.0-ci in KBV_PR_MIO_LAB_Patient|1.0.0-kommentierung.2</title>
+    <link rel='stylesheet' type='text/css' href='./style.css'>
+    <link rel='stylesheet' type='text/css' href='https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css'>
+    <script type='text/javascript' src='https://code.jquery.com/jquery-3.6.0.min.js'></script>
+    <script type='text/javascript' src='https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js'></script>
+</head>
+
+<body>
+    <h2>Mapping: PatientEuLab|0.2.0-ci in KBV_PR_MIO_LAB_Patient|1.0.0-kommentierung.2</h2>
+    
+    <div style="display: flex; justify-content: space-between;">
+        <div style="flex: 1;">
+            
+            <p>Source Profile: 
+            <a href="https://build.fhir.org/ig/hl7-eu/laboratory/downloads.html" target="_blank">PatientEuLab|0.2.0-ci</a></p>
+            
+            
+            <p>Target Profile: <a href="https://simplifier.net/lab1x0x0/kbv_pr_mio_lab_patient" target="_blank">KBV_PR_MIO_LAB_Patient|1.0.0-kommentierung.2</a></p>
+            <p>Version: 1.0, Status: draft</p>
+            <p>Last updated on: 2024-11-01 18:24:11</p>
+        </div>
+        <div style="flex: 1; display: flex; justify-content: flex-end;">
+            <div>
+                <h3>Color Legend:</h3>
+                <ul style="list-style: none; padding: 0;">
+                    <li><span style="background-color: #DCF6E9;">&nbsp;&nbsp;&nbsp;&nbsp;</span> Information present in the source will be retained in the target mapping</li>
+                    <li><span style="background-color: #FFEBE6;">&nbsp;&nbsp;&nbsp;&nbsp;</span> Information will be removed or left empty in the target mapping</li>
+                    <li><span style="background-color: #FFFAE6;">&nbsp;&nbsp;&nbsp;&nbsp;</span> Special action is required for this mapping</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <table id='resultsTable' class='display' style='width:100%'>
+        <thead>
+            <tr>
+                <th rowspan="2">Property</th>
+                
+                <th style="text-align: center;">Source Profile</th>
+                
+                <th style="text-align: center;">Target Profile</th>
+                <th rowspan="2" class="warning-column">Warning</th>
+                
+                    <th rowspan="2">Remarks</th>
+                
+            </tr>
+            <tr>
+                
+                <th style="text-align: center;">PatientEuLab|0.2.0-ci</th>
+                
+                <th style="text-align: center;">KBV_PR_MIO_LAB_Patient|1.0.0-kommentierung.2</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+            <tr class="row-extension">
+                <td>Patient.active
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        0..1
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Extension and value(s) will be retained</td>
+                
+            </tr>
+            
+            <tr class="row-use">
+                <td>Patient.address
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        0..*
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        0..*
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Property and value(s) will be retained</td>
+                
+            </tr>
+            
+            <tr class="row-not-use">
+                <td>Patient.address:Postfach
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        0..*
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Will remain empty for now, as no source information is available</td>
+                
+            </tr>
+            
+            <tr class="row-not-use">
+                <td>Patient.address:Postfach.city
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        0..1
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Will remain empty for now, as no source information is available</td>
+                
+            </tr>
+            
+            <tr class="row-not-use">
+                <td>Patient.address:Postfach.country
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        0..1
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Will remain empty for now, as no source information is available</td>
+                
+            </tr>
+            
+            <tr class="row-not-use">
+                <td>Patient.address:Postfach.extension:Stadtteil
+                    <br>(<a href="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-precinct" target="_blank">http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-precinct</a>)
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        0..1
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Will remain empty for now, as no source information is available</td>
+                
+            </tr>
+            
+            <tr class="row-not-use">
+                <td>Patient.address:Postfach.line
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        0..1
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Will remain empty for now, as no source information is available</td>
+                
+            </tr>
+            
+            <tr class="row-not-use">
+                <td>Patient.address:Postfach.line.extension:Postfach
+                    <br>(<a href="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox" target="_blank">http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox</a>)
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        0..1
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Will remain empty for now, as no source information is available</td>
+                
+            </tr>
+            
+            <tr class="row-not-use">
+                <td>Patient.address:Postfach.line.value
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        0..1
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Will remain empty for now, as no source information is available</td>
+                
+            </tr>
+            
+            <tr class="row-not-use">
+                <td>Patient.address:Postfach.postalCode
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        0..1
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Will remain empty for now, as no source information is available</td>
+                
+            </tr>
+            
+            <tr class="row-not-use">
+                <td>Patient.address:Postfach.type
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        1..1
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Will remain empty for now, as no source information is available</td>
+                
+            </tr>
+            
+            <tr class="row-not-use">
+                <td>Patient.address:Strassenanschrift
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        0..*
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Will remain empty for now, as no source information is available</td>
+                
+            </tr>
+            
+            <tr class="row-not-use">
+                <td>Patient.address:Strassenanschrift.city
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        0..1
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Will remain empty for now, as no source information is available</td>
+                
+            </tr>
+            
+            <tr class="row-not-use">
+                <td>Patient.address:Strassenanschrift.country
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        0..1
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Will remain empty for now, as no source information is available</td>
+                
+            </tr>
+            
+            <tr class="row-not-use">
+                <td>Patient.address:Strassenanschrift.extension:Stadtteil
+                    <br>(<a href="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-precinct" target="_blank">http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-precinct</a>)
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        0..1
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Will remain empty for now, as no source information is available</td>
+                
+            </tr>
+            
+            <tr class="row-not-use">
+                <td>Patient.address:Strassenanschrift.line
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        0..3
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Will remain empty for now, as no source information is available</td>
+                
+            </tr>
+            
+            <tr class="row-not-use">
+                <td>Patient.address:Strassenanschrift.line.extension:Adresszusatz
+                    <br>(<a href="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator" target="_blank">http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator</a>)
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        0..1
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Will remain empty for now, as no source information is available</td>
+                
+            </tr>
+            
+            <tr class="row-not-use">
+                <td>Patient.address:Strassenanschrift.line.extension:Hausnummer
+                    <br>(<a href="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber" target="_blank">http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber</a>)
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        0..1
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Will remain empty for now, as no source information is available</td>
+                
+            </tr>
+            
+            <tr class="row-not-use">
+                <td>Patient.address:Strassenanschrift.line.extension:Strasse
+                    <br>(<a href="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName" target="_blank">http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName</a>)
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        0..1
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Will remain empty for now, as no source information is available</td>
+                
+            </tr>
+            
+            <tr class="row-not-use">
+                <td>Patient.address:Strassenanschrift.line.value
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        0..1
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Will remain empty for now, as no source information is available</td>
+                
+            </tr>
+            
+            <tr class="row-not-use">
+                <td>Patient.address:Strassenanschrift.postalCode
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        0..1
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Will remain empty for now, as no source information is available</td>
+                
+            </tr>
+            
+            <tr class="row-not-use">
+                <td>Patient.address:Strassenanschrift.type
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        1..1
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Will remain empty for now, as no source information is available</td>
+                
+            </tr>
+            
+            <tr class="row-use">
+                <td>Patient.birthDate
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        1..1
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        1..1
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Property and value(s) will be retained</td>
+                
+            </tr>
+            
+            <tr class="row-not-use">
+                <td>Patient.birthDate.extension:data-absent-reason
+                    <br>(<a href="http://hl7.org/fhir/StructureDefinition/data-absent-reason" target="_blank">http://hl7.org/fhir/StructureDefinition/data-absent-reason</a>)
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        0..1
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Will remain empty for now, as no source information is available</td>
+                
+            </tr>
+            
+            <tr class="row-not-use">
+                <td>Patient.birthDate.value
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        0..1
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Will remain empty for now, as no source information is available</td>
+                
+            </tr>
+            
+            <tr class="row-use">
+                <td>Patient.communication
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        0..*
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        0..*
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Property and value(s) will be retained</td>
+                
+            </tr>
+            
+            <tr class="row-use">
+                <td>Patient.communication.language
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        1..1
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        1..1
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Property and value(s) will be retained</td>
+                
+            </tr>
+            
+            <tr class="row-not-use">
+                <td>Patient.communication.language.coding
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        0..*
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Will remain empty for now, as no source information is available</td>
+                
+            </tr>
+            
+            <tr class="row-not-use">
+                <td>Patient.communication.language.coding.code
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        1..1
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Will remain empty for now, as no source information is available</td>
+                
+            </tr>
+            
+            <tr class="row-not-use">
+                <td>Patient.communication.language.coding.display
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        1..1
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Will remain empty for now, as no source information is available</td>
+                
+            </tr>
+            
+            <tr class="row-not-use">
+                <td>Patient.communication.language.coding.system
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        1..1
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Will remain empty for now, as no source information is available</td>
+                
+            </tr>
+            
+            <tr class="row-not-use">
+                <td>Patient.communication.language.coding.version
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        0..1
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Will remain empty for now, as no source information is available</td>
+                
+            </tr>
+            
+            <tr class="row-extension">
+                <td>Patient.communication.preferred
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        0..1
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Extension and value(s) will be retained</td>
+                
+            </tr>
+            
+            <tr class="row-extension">
+                <td>Patient.contact
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        0..*
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Extension and value(s) will be retained</td>
+                
+            </tr>
+            
+            <tr class="row-extension">
+                <td>Patient.contact.address
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        0..1
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Extension and value(s) will be retained</td>
+                
+            </tr>
+            
+            <tr class="row-extension">
+                <td>Patient.contact.gender
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        0..1
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Extension and value(s) will be retained</td>
+                
+            </tr>
+            
+            <tr class="row-extension">
+                <td>Patient.contact.name
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        0..1
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Extension and value(s) will be retained</td>
+                
+            </tr>
+            
+            <tr class="row-extension">
+                <td>Patient.contact.organization
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        0..1
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Extension and value(s) will be retained</td>
+                
+            </tr>
+            
+            <tr class="row-extension">
+                <td>Patient.contact.period
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        0..1
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Extension and value(s) will be retained</td>
+                
+            </tr>
+            
+            <tr class="row-extension">
+                <td>Patient.contact.relationship
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        0..*
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Extension and value(s) will be retained</td>
+                
+            </tr>
+            
+            <tr class="row-extension">
+                <td>Patient.contact.telecom
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        0..*
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Extension and value(s) will be retained</td>
+                
+            </tr>
+            
+            <tr class="row-extension">
+                <td>Patient.contained
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        0..*
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Extension and value(s) will be retained</td>
+                
+            </tr>
+            
+            <tr class="row-extension">
+                <td>Patient.deceased[x]
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        0..1
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Extension and value(s) will be retained</td>
+                
+            </tr>
+            
+            <tr class="row-extension">
+                <td>Patient.extension:birthPlace
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        0..1
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Extension and value(s) will be retained</td>
+                
+            </tr>
+            
+            <tr class="row-extension">
+                <td>Patient.extension:birthPlace.url
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        1..1
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Extension and value(s) will be retained</td>
+                
+            </tr>
+            
+            <tr class="row-extension">
+                <td>Patient.extension:birthPlace.value[x]
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        1..1
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Extension and value(s) will be retained</td>
+                
+            </tr>
+            
+            <tr class="row-not-use">
+                <td>Patient.extension:klinischRelevantesGeschlecht
+                    <br>(<a href="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_Sex_for_Clinical_Use" target="_blank">https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_Sex_for_Clinical_Use</a>)
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        0..1
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Will remain empty for now, as no source information is available</td>
+                
+            </tr>
+            
+            <tr class="row-extension">
+                <td>Patient.extension:sex-for-clinical-use
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        0..*
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Extension and value(s) will be retained</td>
+                
+            </tr>
+            
+            <tr class="row-use">
+                <td>Patient.gender
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        0..1
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        0..1
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Property and value(s) will be retained</td>
+                
+            </tr>
+            
+            <tr class="row-not-use">
+                <td>Patient.gender.extension:other-amtlich
+                    <br>(<a href="http://fhir.de/StructureDefinition/gender-amtlich-de" target="_blank">http://fhir.de/StructureDefinition/gender-amtlich-de</a>)
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        0..1
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Will remain empty for now, as no source information is available</td>
+                
+            </tr>
+            
+            <tr class="row-not-use">
+                <td>Patient.gender.value
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        0..1
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Will remain empty for now, as no source information is available</td>
+                
+            </tr>
+            
+            <tr class="row-extension">
+                <td>Patient.generalPractitioner
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        0..*
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Extension and value(s) will be retained</td>
+                
+            </tr>
+            
+            <tr class="row-use">
+                <td>Patient.identifier
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        0..*
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        1..*
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                    <ul>
+                        
+                        <li>The minimum cardinality of one of the source profiles is less than the minimum cardinality of the target profile</li>
+                        
+                    </ul>
+                    
+                </td>
+                
+                    <td>Property and value(s) will be retained</td>
+                
+            </tr>
+            
+            <tr class="row-not-use">
+                <td>Patient.identifier:pid
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        0..1
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Will remain empty for now, as no source information is available</td>
+                
+            </tr>
+            
+            <tr class="row-not-use">
+                <td>Patient.identifier:pid.system
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        1..1
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Will remain empty for now, as no source information is available</td>
+                
+            </tr>
+            
+            <tr class="row-not-use">
+                <td>Patient.identifier:pid.type
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        1..1
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Will remain empty for now, as no source information is available</td>
+                
+            </tr>
+            
+            <tr class="row-not-use">
+                <td>Patient.identifier:pid.type.coding
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        1..1
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Will remain empty for now, as no source information is available</td>
+                
+            </tr>
+            
+            <tr class="row-not-use">
+                <td>Patient.identifier:pid.type.coding.code
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        1..1
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Will remain empty for now, as no source information is available</td>
+                
+            </tr>
+            
+            <tr class="row-not-use">
+                <td>Patient.identifier:pid.type.coding.display
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        1..1
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Will remain empty for now, as no source information is available</td>
+                
+            </tr>
+            
+            <tr class="row-not-use">
+                <td>Patient.identifier:pid.type.coding.system
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        1..1
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Will remain empty for now, as no source information is available</td>
+                
+            </tr>
+            
+            <tr class="row-not-use">
+                <td>Patient.identifier:pid.type.coding.version
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        0..1
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Will remain empty for now, as no source information is available</td>
+                
+            </tr>
+            
+            <tr class="row-not-use">
+                <td>Patient.identifier:pid.value
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        1..1
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Will remain empty for now, as no source information is available</td>
+                
+            </tr>
+            
+            <tr class="row-not-use">
+                <td>Patient.identifier:reisepassnummer
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        0..1
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Will remain empty for now, as no source information is available</td>
+                
+            </tr>
+            
+            <tr class="row-not-use">
+                <td>Patient.identifier:reisepassnummer.system
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        0..1
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Will remain empty for now, as no source information is available</td>
+                
+            </tr>
+            
+            <tr class="row-not-use">
+                <td>Patient.identifier:reisepassnummer.type
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        1..1
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Will remain empty for now, as no source information is available</td>
+                
+            </tr>
+            
+            <tr class="row-not-use">
+                <td>Patient.identifier:reisepassnummer.type.coding
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        1..1
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Will remain empty for now, as no source information is available</td>
+                
+            </tr>
+            
+            <tr class="row-not-use">
+                <td>Patient.identifier:reisepassnummer.type.coding.code
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        1..1
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Will remain empty for now, as no source information is available</td>
+                
+            </tr>
+            
+            <tr class="row-not-use">
+                <td>Patient.identifier:reisepassnummer.type.coding.display
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        1..1
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Will remain empty for now, as no source information is available</td>
+                
+            </tr>
+            
+            <tr class="row-not-use">
+                <td>Patient.identifier:reisepassnummer.type.coding.system
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        1..1
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Will remain empty for now, as no source information is available</td>
+                
+            </tr>
+            
+            <tr class="row-not-use">
+                <td>Patient.identifier:reisepassnummer.type.coding.version
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        0..1
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Will remain empty for now, as no source information is available</td>
+                
+            </tr>
+            
+            <tr class="row-not-use">
+                <td>Patient.identifier:reisepassnummer.value
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        1..1
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Will remain empty for now, as no source information is available</td>
+                
+            </tr>
+            
+            <tr class="row-not-use">
+                <td>Patient.identifier:versichertenId_GKV
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        0..1
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Will remain empty for now, as no source information is available</td>
+                
+            </tr>
+            
+            <tr class="row-not-use">
+                <td>Patient.identifier:versichertenId_GKV.system
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        1..1
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Will remain empty for now, as no source information is available</td>
+                
+            </tr>
+            
+            <tr class="row-not-use">
+                <td>Patient.identifier:versichertenId_GKV.type
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        1..1
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Will remain empty for now, as no source information is available</td>
+                
+            </tr>
+            
+            <tr class="row-not-use">
+                <td>Patient.identifier:versichertenId_GKV.type.coding
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        1..1
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Will remain empty for now, as no source information is available</td>
+                
+            </tr>
+            
+            <tr class="row-not-use">
+                <td>Patient.identifier:versichertenId_GKV.type.coding.code
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        1..1
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Will remain empty for now, as no source information is available</td>
+                
+            </tr>
+            
+            <tr class="row-not-use">
+                <td>Patient.identifier:versichertenId_GKV.type.coding.display
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        1..1
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Will remain empty for now, as no source information is available</td>
+                
+            </tr>
+            
+            <tr class="row-not-use">
+                <td>Patient.identifier:versichertenId_GKV.type.coding.system
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        1..1
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Will remain empty for now, as no source information is available</td>
+                
+            </tr>
+            
+            <tr class="row-not-use">
+                <td>Patient.identifier:versichertenId_GKV.type.coding.version
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        0..1
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Will remain empty for now, as no source information is available</td>
+                
+            </tr>
+            
+            <tr class="row-not-use">
+                <td>Patient.identifier:versichertenId_GKV.value
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        1..1
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Will remain empty for now, as no source information is available</td>
+                
+            </tr>
+            
+            <tr class="row-not-use">
+                <td>Patient.identifier:versichertenId_PKV
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        0..1
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Will remain empty for now, as no source information is available</td>
+                
+            </tr>
+            
+            <tr class="row-not-use">
+                <td>Patient.identifier:versichertenId_PKV.system
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        1..1
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Will remain empty for now, as no source information is available</td>
+                
+            </tr>
+            
+            <tr class="row-not-use">
+                <td>Patient.identifier:versichertenId_PKV.type
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        0..1
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Will remain empty for now, as no source information is available</td>
+                
+            </tr>
+            
+            <tr class="row-not-use">
+                <td>Patient.identifier:versichertenId_PKV.type.coding
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        2..2
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Will remain empty for now, as no source information is available</td>
+                
+            </tr>
+            
+            <tr class="row-not-use">
+                <td>Patient.identifier:versichertenId_PKV.type.coding.code
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        1..1
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Will remain empty for now, as no source information is available</td>
+                
+            </tr>
+            
+            <tr class="row-not-use">
+                <td>Patient.identifier:versichertenId_PKV.type.coding.display
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        1..1
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Will remain empty for now, as no source information is available</td>
+                
+            </tr>
+            
+            <tr class="row-not-use">
+                <td>Patient.identifier:versichertenId_PKV.type.coding.system
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        1..1
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Will remain empty for now, as no source information is available</td>
+                
+            </tr>
+            
+            <tr class="row-not-use">
+                <td>Patient.identifier:versichertenId_PKV.type.coding.version
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        0..1
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Will remain empty for now, as no source information is available</td>
+                
+            </tr>
+            
+            <tr class="row-not-use">
+                <td>Patient.identifier:versichertenId_PKV.value
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        1..1
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Will remain empty for now, as no source information is available</td>
+                
+            </tr>
+            
+            <tr class="row-not-use">
+                <td>Patient.identifier:versichertennummer_kvk
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        0..1
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Will remain empty for now, as no source information is available</td>
+                
+            </tr>
+            
+            <tr class="row-not-use">
+                <td>Patient.identifier:versichertennummer_kvk.system
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        1..1
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Will remain empty for now, as no source information is available</td>
+                
+            </tr>
+            
+            <tr class="row-not-use">
+                <td>Patient.identifier:versichertennummer_kvk.type
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        1..1
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Will remain empty for now, as no source information is available</td>
+                
+            </tr>
+            
+            <tr class="row-not-use">
+                <td>Patient.identifier:versichertennummer_kvk.type.coding
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        1..1
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Will remain empty for now, as no source information is available</td>
+                
+            </tr>
+            
+            <tr class="row-not-use">
+                <td>Patient.identifier:versichertennummer_kvk.type.coding.code
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        1..1
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Will remain empty for now, as no source information is available</td>
+                
+            </tr>
+            
+            <tr class="row-not-use">
+                <td>Patient.identifier:versichertennummer_kvk.type.coding.display
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        1..1
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Will remain empty for now, as no source information is available</td>
+                
+            </tr>
+            
+            <tr class="row-not-use">
+                <td>Patient.identifier:versichertennummer_kvk.type.coding.system
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        1..1
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Will remain empty for now, as no source information is available</td>
+                
+            </tr>
+            
+            <tr class="row-not-use">
+                <td>Patient.identifier:versichertennummer_kvk.type.coding.version
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        0..1
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Will remain empty for now, as no source information is available</td>
+                
+            </tr>
+            
+            <tr class="row-not-use">
+                <td>Patient.identifier:versichertennummer_kvk.value
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        1..1
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Will remain empty for now, as no source information is available</td>
+                
+            </tr>
+            
+            <tr class="row-not-use">
+                <td>Patient.identifier:versichertennummer_pkv
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        0..1
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Will remain empty for now, as no source information is available</td>
+                
+            </tr>
+            
+            <tr class="row-not-use">
+                <td>Patient.identifier:versichertennummer_pkv.assigner
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        1..1
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Will remain empty for now, as no source information is available</td>
+                
+            </tr>
+            
+            <tr class="row-not-use">
+                <td>Patient.identifier:versichertennummer_pkv.assigner.display
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        1..1
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Will remain empty for now, as no source information is available</td>
+                
+            </tr>
+            
+            <tr class="row-manual">
+                <td>Patient.identifier:versichertennummer_pkv.assigner.reference
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        1..1
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td></td>
+                
+            </tr>
+            
+            <tr class="row-not-use">
+                <td>Patient.identifier:versichertennummer_pkv.system
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        0..1
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Will remain empty for now, as no source information is available</td>
+                
+            </tr>
+            
+            <tr class="row-not-use">
+                <td>Patient.identifier:versichertennummer_pkv.type
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        1..1
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Will remain empty for now, as no source information is available</td>
+                
+            </tr>
+            
+            <tr class="row-not-use">
+                <td>Patient.identifier:versichertennummer_pkv.type.coding
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        2..2
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Will remain empty for now, as no source information is available</td>
+                
+            </tr>
+            
+            <tr class="row-not-use">
+                <td>Patient.identifier:versichertennummer_pkv.type.coding.code
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        1..1
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Will remain empty for now, as no source information is available</td>
+                
+            </tr>
+            
+            <tr class="row-not-use">
+                <td>Patient.identifier:versichertennummer_pkv.type.coding.display
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        1..1
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Will remain empty for now, as no source information is available</td>
+                
+            </tr>
+            
+            <tr class="row-not-use">
+                <td>Patient.identifier:versichertennummer_pkv.type.coding.system
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        1..1
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Will remain empty for now, as no source information is available</td>
+                
+            </tr>
+            
+            <tr class="row-not-use">
+                <td>Patient.identifier:versichertennummer_pkv.type.coding.version
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        0..1
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Will remain empty for now, as no source information is available</td>
+                
+            </tr>
+            
+            <tr class="row-not-use">
+                <td>Patient.identifier:versichertennummer_pkv.value
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        1..1
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Will remain empty for now, as no source information is available</td>
+                
+            </tr>
+            
+            <tr class="row-extension">
+                <td>Patient.implicitRules
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        0..1
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Extension and value(s) will be retained</td>
+                
+            </tr>
+            
+            <tr class="row-use">
+                <td>Patient.language
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        0..1
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        0..1
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Property and value(s) will be retained</td>
+                
+            </tr>
+            
+            <tr class="row-extension">
+                <td>Patient.link
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        0..*
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Extension and value(s) will be retained</td>
+                
+            </tr>
+            
+            <tr class="row-extension">
+                <td>Patient.link.other
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        1..1
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Extension and value(s) will be retained</td>
+                
+            </tr>
+            
+            <tr class="row-extension">
+                <td>Patient.link.type
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        1..1
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Extension and value(s) will be retained</td>
+                
+            </tr>
+            
+            <tr class="row-extension">
+                <td>Patient.managingOrganization
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        0..1
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Extension and value(s) will be retained</td>
+                
+            </tr>
+            
+            <tr class="row-extension">
+                <td>Patient.maritalStatus
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        0..1
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Extension and value(s) will be retained</td>
+                
+            </tr>
+            
+            <tr class="row-use">
+                <td>Patient.meta
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        0..1
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        1..1
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                    <ul>
+                        
+                        <li>The minimum cardinality of one of the source profiles is less than the minimum cardinality of the target profile</li>
+                        
+                    </ul>
+                    
+                </td>
+                
+                    <td>Property and value(s) will be retained</td>
+                
+            </tr>
+            
+            <tr class="row-not-use">
+                <td>Patient.meta.lastUpdated
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        0..1
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Will remain empty for now, as no source information is available</td>
+                
+            </tr>
+            
+            <tr class="row-manual">
+                <td>Patient.meta.profile
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        1..*
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td></td>
+                
+            </tr>
+            
+            <tr class="row-not-use">
+                <td>Patient.meta.profile:mioProfile
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        1..1
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Will remain empty for now, as no source information is available</td>
+                
+            </tr>
+            
+            <tr class="row-not-use">
+                <td>Patient.meta.versionId
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        0..1
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Will remain empty for now, as no source information is available</td>
+                
+            </tr>
+            
+            <tr class="row-extension">
+                <td>Patient.multipleBirth[x]
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        0..1
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Extension and value(s) will be retained</td>
+                
+            </tr>
+            
+            <tr class="row-use">
+                <td>Patient.name
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        1..*
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        1..1
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                    <ul>
+                        
+                        <li>The maximum cardinality of one of the source profiles exceeds the maximum cardinality of the target profile</li>
+                        
+                    </ul>
+                    
+                </td>
+                
+                    <td>Property and value(s) will be retained</td>
+                
+            </tr>
+            
+            <tr class="row-extension">
+                <td>Patient.name.extension:name-absent-reason
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        0..*
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Extension and value(s) will be retained</td>
+                
+            </tr>
+            
+            <tr class="row-extension">
+                <td>Patient.name.family
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        0..1
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Extension and value(s) will be retained</td>
+                
+            </tr>
+            
+            <tr class="row-extension">
+                <td>Patient.name.family.extension:fathersFamily
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        0..*
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Extension and value(s) will be retained</td>
+                
+            </tr>
+            
+            <tr class="row-extension">
+                <td>Patient.name.family.extension:mothersFamily
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        0..*
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Extension and value(s) will be retained</td>
+                
+            </tr>
+            
+            <tr class="row-extension">
+                <td>Patient.name.family.value
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        0..1
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Extension and value(s) will be retained</td>
+                
+            </tr>
+            
+            <tr class="row-extension">
+                <td>Patient.name.given
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        0..*
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Extension and value(s) will be retained</td>
+                
+            </tr>
+            
+            <tr class="row-extension">
+                <td>Patient.name.period
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        0..1
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Extension and value(s) will be retained</td>
+                
+            </tr>
+            
+            <tr class="row-extension">
+                <td>Patient.name.prefix
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        0..*
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Extension and value(s) will be retained</td>
+                
+            </tr>
+            
+            <tr class="row-extension">
+                <td>Patient.name.suffix
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        0..*
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Extension and value(s) will be retained</td>
+                
+            </tr>
+            
+            <tr class="row-extension">
+                <td>Patient.name.text
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        0..1
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Extension and value(s) will be retained</td>
+                
+            </tr>
+            
+            <tr class="row-extension">
+                <td>Patient.name.use
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        0..1
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Extension and value(s) will be retained</td>
+                
+            </tr>
+            
+            <tr class="row-not-use">
+                <td>Patient.name:Pseudonymisierung
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        0..1
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Will remain empty for now, as no source information is available</td>
+                
+            </tr>
+            
+            <tr class="row-not-use">
+                <td>Patient.name:Pseudonymisierung.extension:data-absent-reason
+                    <br>(<a href="http://hl7.org/fhir/StructureDefinition/data-absent-reason" target="_blank">http://hl7.org/fhir/StructureDefinition/data-absent-reason</a>)
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        1..1
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Will remain empty for now, as no source information is available</td>
+                
+            </tr>
+            
+            <tr class="row-not-use">
+                <td>Patient.name:name
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        0..1
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Will remain empty for now, as no source information is available</td>
+                
+            </tr>
+            
+            <tr class="row-not-use">
+                <td>Patient.name:name.family
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        1..1
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Will remain empty for now, as no source information is available</td>
+                
+            </tr>
+            
+            <tr class="row-not-use">
+                <td>Patient.name:name.family.extension:nachname
+                    <br>(<a href="http://hl7.org/fhir/StructureDefinition/humanname-own-name" target="_blank">http://hl7.org/fhir/StructureDefinition/humanname-own-name</a>)
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        1..1
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Will remain empty for now, as no source information is available</td>
+                
+            </tr>
+            
+            <tr class="row-not-use">
+                <td>Patient.name:name.family.extension:namenszusatz
+                    <br>(<a href="http://fhir.de/StructureDefinition/humanname-namenszusatz" target="_blank">http://fhir.de/StructureDefinition/humanname-namenszusatz</a>)
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        0..1
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Will remain empty for now, as no source information is available</td>
+                
+            </tr>
+            
+            <tr class="row-not-use">
+                <td>Patient.name:name.family.extension:vorsatzwort
+                    <br>(<a href="http://hl7.org/fhir/StructureDefinition/humanname-own-prefix" target="_blank">http://hl7.org/fhir/StructureDefinition/humanname-own-prefix</a>)
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        0..1
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Will remain empty for now, as no source information is available</td>
+                
+            </tr>
+            
+            <tr class="row-not-use">
+                <td>Patient.name:name.family.value
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        0..1
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Will remain empty for now, as no source information is available</td>
+                
+            </tr>
+            
+            <tr class="row-not-use">
+                <td>Patient.name:name.given
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        0..1
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Will remain empty for now, as no source information is available</td>
+                
+            </tr>
+            
+            <tr class="row-not-use">
+                <td>Patient.name:name.prefix
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        0..1
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Will remain empty for now, as no source information is available</td>
+                
+            </tr>
+            
+            <tr class="row-not-use">
+                <td>Patient.name:name.prefix.extension:prefix-qualifier
+                    <br>(<a href="http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier" target="_blank">http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier</a>)
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        1..1
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Will remain empty for now, as no source information is available</td>
+                
+            </tr>
+            
+            <tr class="row-not-use">
+                <td>Patient.name:name.prefix.value
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        0..1
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Will remain empty for now, as no source information is available</td>
+                
+            </tr>
+            
+            <tr class="row-not-use">
+                <td>Patient.name:name.text
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        0..1
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Will remain empty for now, as no source information is available</td>
+                
+            </tr>
+            
+            <tr class="row-not-use">
+                <td>Patient.name:name.use
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        1..1
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Will remain empty for now, as no source information is available</td>
+                
+            </tr>
+            
+            <tr class="row-extension">
+                <td>Patient.photo
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        0..*
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Extension and value(s) will be retained</td>
+                
+            </tr>
+            
+            <tr class="row-use">
+                <td>Patient.telecom
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        0..*
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        0..*
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Property and value(s) will be retained</td>
+                
+            </tr>
+            
+            <tr class="row-not-use">
+                <td>Patient.telecom.system
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        1..1
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Will remain empty for now, as no source information is available</td>
+                
+            </tr>
+            
+            <tr class="row-not-use">
+                <td>Patient.telecom.value
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        1..1
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Will remain empty for now, as no source information is available</td>
+                
+            </tr>
+            
+            <tr class="row-use">
+                <td>Patient.text
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        0..1
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        0..1
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Property and value(s) will be retained</td>
+                
+            </tr>
+            
+            <tr class="row-not-use">
+                <td>Patient.text.div
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        1..1
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Will remain empty for now, as no source information is available</td>
+                
+            </tr>
+            
+            <tr class="row-not-use">
+                <td>Patient.text.status
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                </td>
+                
+                <td style="text-align: center;">
+                    
+                        1..1
+                    
+                </td>
+                
+                <td class="warning-column">
+                    
+                </td>
+                
+                    <td>Will remain empty for now, as no source information is available</td>
+                
+            </tr>
+            
+        </tbody>
+    </table>
+    <script>
+        $(document).ready(function () {
+            var warningsVisible = false;
+            var numberOfWarnings = 3;
+            
+            $('#resultsTable').DataTable({
+                'pageLength': -1,
+                'lengthMenu': [[10, 25, 50, 100, 500, -1], [10, 25, 50, 100, 500, 'All']],
+                'dom': '<"top"f>rt<"bottom"ilp><"clear">',
+                'initComplete': function() {
+                    var buttonHtml = '<button id="toggleWarnings"><i class="fas fa-exclamation-triangle"></i> show warnings (' + numberOfWarnings + ')</button>';
+                    $('#resultsTable_filter').prepend(buttonHtml);
+                    
+                    $('.warning-column').hide(); // Hide warnings by default
+                    
+                    $('#toggleWarnings').click(function () {
+                        $('.warning-column').toggle();
+                        warningsVisible = !warningsVisible;
+                        $(this).html('<i class="fas fa-exclamation-triangle"></i> ' + (warningsVisible ? 'hide warnings (' + numberOfWarnings + ')' : 'show warnings (' + numberOfWarnings + ')'));
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

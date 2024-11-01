@@ -1,0 +1,46 @@
+{
+    "PatientEuLab|0.2.0-ci": {
+        "KBV_PR_MIO_LAB_Patient|1.0.0-kommentierung.2": {
+            "id": "90ac71f3-3204-4b82-b8a3-f7ecc4a7a98a",
+            "version": "1.0",
+            "status": "draft",
+            "last_updated": "2024-11-01 18:24:11",
+            "mappings": {
+                "Patient.active": "Patient.active",
+                "Patient.address": "Patient.address",
+                "Patient.birthDate": "Patient.birthDate",
+                "Patient.communication": "Patient.communication",
+                "Patient.communication.preferred": "Patient.communication.preferred",
+                "Patient.contact": "Patient.contact",
+                "Patient.contained": "Patient.contained",
+                "Patient.deceased[x]": "Patient.deceased[x]",
+                "Patient.extension:birthPlace": "Patient.extension:birthPlace",
+                "Patient.extension:sex-for-clinical-use": "Patient.extension:sex-for-clinical-use",
+                "Patient.gender": "Patient.gender",
+                "Patient.generalPractitioner": "Patient.generalPractitioner",
+                "Patient.identifier": "Patient.identifier",
+                "Patient.implicitRules": "Patient.implicitRules",
+                "Patient.language": "Patient.language",
+                "Patient.link": "Patient.link",
+                "Patient.managingOrganization": "Patient.managingOrganization",
+                "Patient.maritalStatus": "Patient.maritalStatus",
+                "Patient.meta": "Patient.meta",
+                "Patient.multipleBirth[x]": "Patient.multipleBirth[x]",
+                "Patient.name": "Patient.name",
+                "Patient.name.extension:name-absent-reason": "Patient.name.extension:name-absent-reason",
+                "Patient.name.family": "Patient.name.family",
+                "Patient.name.given": "Patient.name.given",
+                "Patient.name.period": "Patient.name.period",
+                "Patient.name.prefix": "Patient.name.prefix",
+                "Patient.name.suffix": "Patient.name.suffix",
+                "Patient.name.text": "Patient.name.text",
+                "Patient.name.use": "Patient.name.use",
+                "Patient.photo": "Patient.photo",
+                "Patient.telecom": "Patient.telecom",
+                "Patient.text": "Patient.text"
+            },
+            "fixed": {},
+            "remove": []
+        }
+    }
+}
