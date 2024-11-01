@@ -1,0 +1,31 @@
+{
+  "manual_entries_file": "manual_entries.yaml",
+  "data_dir": "data",
+  "html_output_dir": "docs",
+  "mapping_output_file": "mapping.json",
+  "show_remarks": true,
+  "show_warnings": false,
+  "profiles_to_compare": [
+    {
+      "id": "10ac71f3-3204-4b82-b8a3-f7ecc4a7a98a",
+      "version": "1.0",
+      "status": "draft",
+      "mappings": {
+        "sourceprofiles": [
+          {
+            "file": "StructureDefinition-Patient-eu-lab.json",
+            "version": "0.2.0-ci",
+            "simplifier_url": "https://build.fhir.org/ig/hl7-eu/laboratory/downloads.html",
+            "file_download_url": "https://build.fhir.org/ig/hl7-eu/laboratory/downloads.html"
+          }
+        ],
+        "targetprofile": {
+          "file": "KBV_PR_MIO_LAB_Patient.json",
+          "version": "1.0.0-kommentierung.2",
+          "simplifier_url": "https://simplifier.net/lab1x0x0/kbv_pr_mio_lab_patient",
+          "file_download_url": "https://simplifier.net/lab1x0x0/kbv_pr_mio_lab_patient/$downloadsnapshot?format=json"
+        }
+      }
+    }
+  ]
+}
