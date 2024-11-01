@@ -1,0 +1,11 @@
+# Python specific
+.venv
+__pycache__
+.pytest_cache
+
+dist/
+
+# IDE specific
+.vscode/*
+!.vscode/launch.json
+.history

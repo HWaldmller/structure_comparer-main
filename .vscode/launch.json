@@ -1,0 +1,66 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Generate eRP",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "main.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "--project-dir",
+                "../../projects/erp",
+                "--html",
+                "--json"
+            ],
+            "cwd": "${workspaceFolder}/service/src",
+        },
+        {
+            "name": "Generate ApoVZD",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "main.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "--project-dir",
+                "../../projects/apovzd",
+                "--html",
+                "--json"
+            ],
+            "cwd": "${workspaceFolder}/service/src",
+        },
+        {
+            "name": "Generate ePA",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "main.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "--project-dir",
+                "../../projects/epa",
+                "--html",
+                "--json"
+            ],
+            "cwd": "${workspaceFolder}/service/src",
+        },
+        {
+            "name": "Flask App",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "server.py",
+            "args": [
+                "--projects-root-dir",
+                "../../projects"
+            ],
+            "cwd": "${workspaceFolder}/service/src",
+            "jinja": true,
+            "justMyCode": true
+        },
+    ]
+}
